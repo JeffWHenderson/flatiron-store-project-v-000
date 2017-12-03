@@ -1,8 +1,8 @@
 class CartsController < ApplicationController
 
   def show
-    raise current_cart.inspect
     @cart = Cart.find(params[:id])
+    raise current_cart.inspect
   end
 
   def checkout
