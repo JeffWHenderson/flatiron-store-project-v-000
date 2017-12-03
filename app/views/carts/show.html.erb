@@ -10,7 +10,7 @@
   <% end %> </p>
 <% end %>
 
-<p>Order total: <strong><%= "$#{line_item.item.price.to_f / 100}" %></strong> </p>
+
 
 <% if @cart.status == "not submitted" %>
   <%= button_to 'Checkout', checkout_path %>
