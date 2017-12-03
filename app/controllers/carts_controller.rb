@@ -2,7 +2,7 @@ class CartsController < ApplicationController
 
   def show
     @cart = Cart.find_by(id: params[:id])
-    raise current_user.inspect
+    raise current_user.methods.inspect
   end
 
   def checkout
