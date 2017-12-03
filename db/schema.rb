@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 20171201202914) do
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
+    t.integer  "current_cart_id"
     t.datetime "remember_created_at"
     t.integer  "sign_in_count",          default: 0,  null: false
     t.datetime "current_sign_in_at"
