@@ -11,3 +11,4 @@ class ApplicationController < ActionController::Base
       self.where.not(inventory: 0)
     end
   end
+end
