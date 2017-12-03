@@ -3,12 +3,9 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  class Item < ActiveRecord::Base
-    belongs_to :category
-    has_many :line_items
-
-    def self.available_items
-      self.where.not(inventory: 0)
+  def current_cart
+    if current_user
+      current_user.current_cart
     end
   end
 end
