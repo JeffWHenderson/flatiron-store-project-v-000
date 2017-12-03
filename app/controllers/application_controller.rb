@@ -10,3 +10,6 @@ class ApplicationController < ActionController::Base
     end
   end
 end
+
+
+# undefined local variable line_item 
