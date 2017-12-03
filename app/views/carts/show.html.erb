@@ -9,9 +9,3 @@
     <strong>There are only <%= line_item.item.inventory %> left in stock.</strong>
   <% end %> </p>
 <% end %>
-
-
-
-<% if @cart.status == "not submitted" %>
-  <%= button_to 'Checkout', checkout_path %>
-<% end %>
