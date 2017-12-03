@@ -24,6 +24,13 @@ body {
   padding-bottom: 30px;
 }
 
+nav {
+    border: 1px solid black;
+    padding-top: 0px;
+    margin-top: 0px;
+    background-color: lightblue;
+}
+
 .theme-dropdown .dropdown-menu {
   position: static;
   display: block;
