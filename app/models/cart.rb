@@ -38,4 +38,4 @@ class Cart < ActiveRecord::Base
     current_user.current_cart = cart
   end
 
-endß
+end
