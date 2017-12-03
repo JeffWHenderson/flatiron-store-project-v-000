@@ -8,6 +8,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       ## Recoverable
       t.string   :reset_password_token
       t.datetime :reset_password_sent_at
+      t.integer :current_cart_id
 
       ## Rememberable
       t.datetime :remember_created_at
